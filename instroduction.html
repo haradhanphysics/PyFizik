@@ -7,6 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
+    <style>
+        h2 {
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: yellow;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
     <div id="navbar-placeholder"></div>
@@ -71,7 +86,7 @@
             <li><strong>Unix</strong>: A powerful, multiuser operating system used in servers and workstations.</li>
         </ul>
         
-        <h3 id="how-programs-work">How Programs Work</h3>
+        <h2 id="how-programs-work">How Programs Work</h2>
         <p>A program is a set of instructions written in a programming language that a computer can execute. When a program runs, the following steps generally occur:</p>
         <ol>
             <li>
@@ -122,7 +137,7 @@
             </li>
         </ul>
         
-        <h3 id="history-and-development-of-python">History and Development of Python</h3>
+        <h2 id="history-and-development-of-python">History and Development of Python</h2>
         <ul>
             <li>
                 <p><strong>Late 1980s</strong>: Guido van Rossum began working on Python as a successor to the ABC programming language. He aimed to create a language that was easy to read and write, with a clean and straightforward syntax.</p>
@@ -149,7 +164,7 @@
         
         <p>Python's popularity has grown significantly over the years, thanks to its simplicity, readability, and extensive standard library. It has a large and active community that contributes to a vast ecosystem of third-party libraries and frameworks, making it a versatile and powerful tool for developers worldwide.</p>
         
-        <h3 id="history-of-programming-languages">History of Programming Languages</h3>
+        <h2 id="history-of-programming-languages">History of Programming Languages</h2>
         
         <h4 id="fortran">Fortran</h4>
         <ul>
@@ -175,7 +190,7 @@
             <li><strong>Legacy</strong>: C++ is widely used in software development, game development, and real-time systems. It has influenced many modern programming languages, including Java and C#.</li>
         </ul>
         
-        <h3 id="connection-to-python">Connection to Python</h3>
+        <h2 id="connection-to-python">Connection to Python</h2>
         <p>Python, while distinct in its design and philosophy, has been influenced by earlier programming languages like Fortran, C, and C++:</p>
         <ul>
             <li>
@@ -193,7 +208,7 @@
         
         <p>Overall, Python builds on the strengths of its predecessors while introducing its unique features, making it a powerful and flexible programming language for modern software development.</p>
         
-        <h3 id="summary">Summary</h3>
+        <h2 id="summary">Summary</h2>
         <p>In this document, we have explored the fundamental concepts of computers, operating systems, and how programs work. We have also delved into the history and development of Python, tracing its origins and evolution. Additionally, we examined the history of key programming languages such as Fortran, C, and C++, and their influence on Python.</p>
         <p>Python's design philosophy emphasizes readability and simplicity, making it a versatile and powerful tool for modern software development. Its ability to integrate with C and C++ libraries allows developers to leverage existing codebases and optimize performance-critical sections of their programs. Python's extensive standard library and active community contribute to its popularity and widespread use in various fields, including web development, data science, artificial intelligence, and scientific computing.</p>
         <p>By understanding Python's place in the world of programming languages and its connections to earlier languages, we gain a deeper appreciation for its strengths and capabilities. Python continues to evolve, driven by the contributions of its community and the Python Software Foundation, ensuring its relevance and utility for years to come.</p>
