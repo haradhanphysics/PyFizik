@@ -1,5 +1,14 @@
 <div id="navbar-placeholder"></div>
 
+<style>
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+</style>
+
 <script>
     fetch('navbar.html')
         .then(response => response.text())
