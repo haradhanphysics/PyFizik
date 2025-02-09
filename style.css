@@ -32,6 +32,7 @@ h3 {
 
 p {
     margin-bottom: 1.2em;
+    color: teal; /* Global color for all paragraphs */
 }
 
 code {
