@@ -147,8 +147,8 @@ li {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: 30px; /* Add margin to the left */
     margin-right: 30px; /* Add margin to the right */
 }
