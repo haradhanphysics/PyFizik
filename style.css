@@ -6,8 +6,8 @@ body {
     font-size: 1rem;
     word-wrap: break-word;
     overflow-x: hidden;
-    padding-right: 20px; /* Add padding to the right */
-    margin-right: 20px; /* Add margin to the right */
+    /*padding-right: 20px;  Add padding to the right */
+    /*margin-right: 20px;  Add margin to the right */
 }
 
 h1, h2, h3, h4, h5, h6 {
