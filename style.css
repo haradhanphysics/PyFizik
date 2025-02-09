@@ -143,6 +143,7 @@ ul, ol {
 
 li {
     margin-bottom: 0.5em;
+    color: teal; /* Global color for all list items */
 }
 
 .container {
