@@ -25,14 +25,14 @@
                         <h3>1. Basic Hello World</h3>
                         <p>Write a Python program that prints "Hello, World!" to the console.</p>
                         <textarea id="code1" class="form-control" rows="3">print("Hello, World!")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code1', 'output1')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code1', 'output1', 'Hello, World!')">Run Code</button>
                         <pre id="output1" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>2. Personalized Greeting</h3>
                         <p>Modify the program to print a personalized greeting. For example, if your name is John, the output should be "Hello, John!".</p>
                         <textarea id="code2" class="form-control" rows="3">name = "John"\nprint(f"Hello, {name}!")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code2', 'output2')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code2', 'output2', 'Hello, John!')">Run Code</button>
                         <pre id="output2" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
@@ -40,28 +40,28 @@
                         <p>Write a Python program that prints the following text on separate lines:</p>
                         <pre>Hello, World!\nWelcome to Python programming.</pre>
                         <textarea id="code3" class="form-control" rows="3">print("Hello, World!")\nprint("Welcome to Python programming.")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code3', 'output3')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code3', 'output3', 'Hello, World!\nWelcome to Python programming.')">Run Code</button>
                         <pre id="output3" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>4. Using Variables</h3>
                         <p>Store the greeting message in a variable and then print it.</p>
                         <textarea id="code4" class="form-control" rows="3">message = "Hello, World!"\nprint(message)</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code4', 'output4')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code4', 'output4', 'Hello, World!')">Run Code</button>
                         <pre id="output4" class="mt-2"></pre>
                     </div>
-                    <div class="quiz-section"></div>
+                    <div class="quiz-section">
                         <h3>5. Combining Strings</h3>
                         <p>Write a program that combines two strings and prints the result. For example, combine "Hello" and "World" to print "Hello World".</p>
                         <textarea id="code5" class="form-control" rows="3">str1 = "Hello"\nstr2 = "World"\nprint(str1 + " " + str2)</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code5', 'output5')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code5', 'output5', 'Hello World')">Run Code</button>
                         <pre id="output5" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>6. Printing Quotes</h3>
                         <p>Write a Python program that prints a quote. For example, print "The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt.</p>
                         <textarea id="code6" class="form-control" rows="3">print("The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code6', 'output6')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code6', 'output6', 'The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt')">Run Code</button>
                         <pre id="output6" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
@@ -69,21 +69,21 @@
                         <p>Write a Python program that prints a string with a newline character and a tab character. For example:</p>
                         <pre>Hello,\n\tWorld!</pre>
                         <textarea id="code7" class="form-control" rows="3">print("Hello,\\n\\tWorld!")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code7', 'output7')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code7', 'output7', 'Hello,\n\tWorld!')">Run Code</button>
                         <pre id="output7" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>8. Printing a Backslash</h3>
                         <p>Write a Python program that prints a string containing a backslash. For example, print "This is a backslash: \\".</p>
                         <textarea id="code8" class="form-control" rows="3">print("This is a backslash: \\\\")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code8', 'output8')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code8', 'output8', 'This is a backslash: \\')">Run Code</button>
                         <pre id="output8" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>9. Formatted Strings</h3>
                         <p>Write a Python program that uses formatted strings to print the result of a calculation. For example, print "The result of 5 + 3 is 8".</p>
                         <textarea id="code9" class="form-control" rows="3">result = 5 + 3\nprint(f"The result of 5 + 3 is {result}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code9', 'output9')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code9', 'output9', 'The result of 5 + 3 is 8')">Run Code</button>
                         <pre id="output9" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
@@ -91,77 +91,77 @@
                         <p>Write a Python program that prints a multiline string using triple quotes. For example:</p>
                         <pre>This is a multiline string.\nIt can span multiple lines.</pre>
                         <textarea id="code10" class="form-control" rows="3">print("""This is a multiline string.\nIt can span multiple lines.""")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code10', 'output10')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code10', 'output10', 'This is a multiline string.\nIt can span multiple lines.')">Run Code</button>
                         <pre id="output10" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>11. Basic Input</h3>
                         <p>Write a Python program that asks the user for their name and then prints a greeting message. For example:</p>
                         <textarea id="code11" class="form-control" rows="3">name = input("Enter your name: ")\nprint(f"Hello, {name}!")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code11', 'output11')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code11', 'output11', 'Hello, [user input]!')">Run Code</button>
                         <pre id="output11" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>12. Numerical Input</h3>
                         <p>Write a Python program that asks the user for a number, adds 10 to it, and then prints the result. For example:</p>
                         <textarea id="code12" class="form-control" rows="3">number = int(input("Enter a number: "))\nresult = number + 10\nprint(f"The result is {result}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code12', 'output12')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code12', 'output12', 'The result is [user input + 10]')">Run Code</button>
                         <pre id="output12" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>13. Even or Odd</h3>
                         <p>Write a Python program that asks the user for a number and then prints whether the number is even or odd. For example:</p>
                         <textarea id="code13" class="form-control" rows="3">number = int(input("Enter a number: "))\nif number % 2 == 0:\n    print("The number is even.")\nelse:\n    print("The number is odd.")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code13', 'output13')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code13', 'output13', 'The number is [even/odd]')">Run Code</button>
                         <pre id="output13" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>14. Remainder Calculation</h3>
                         <p>Write a Python program that asks the user for two numbers and then prints the remainder when the first number is divided by the second number. For example:</p>
                         <textarea id="code14" class="form-control" rows="3">num1 = int(input("Enter the first number: "))\nnum2 = int(input("Enter the second number: "))\nremainder = num1 % num2\nprint(f"The remainder is {remainder}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code14', 'output14')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code14', 'output14', 'The remainder is [remainder]')">Run Code</button>
                         <pre id="output14" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>15. Basic Calculator</h3>
                         <p>Write a Python program that asks the user for two numbers and then prints the sum, difference, product, and quotient of the numbers. For example:</p>
                         <textarea id="code15" class="form-control" rows="3">num1 = float(input("Enter the first number: "))\nnum2 = float(input("Enter the second number: "))\nsum = num1 + num2\ndifference = num1 - num2\nproduct = num1 * num2\nquotient = num1 / num2\nprint(f"The sum is {sum}")\nprint(f"The difference is {difference}")\nprint(f"The product is {product}")\nprint(f"The quotient is {quotient}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code15', 'output15')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code15', 'output15', 'The sum is [sum]\nThe difference is [difference]\nThe product is [product]\nThe quotient is [quotient]')">Run Code</button>
                         <pre id="output15" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>16. Age in Future</h3>
                         <p>Write a Python program that asks the user for their current age and then prints what their age will be in 10 years. For example:</p>
                         <textarea id="code16" class="form-control" rows="3">age = int(input("Enter your current age: "))\nfuture_age = age + 10\nprint(f"In 10 years, you will be {future_age} years old.")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code16', 'output16')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code16', 'output16', 'In 10 years, you will be [future age] years old.')">Run Code</button>
                         <pre id="output16" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>17. Temperature Conversion</h3>
                         <p>Write a Python program that asks the user for a temperature in Celsius and then converts it to Fahrenheit. For example:</p>
                         <textarea id="code17" class="form-control" rows="3">celsius = float(input("Enter temperature in Celsius: "))\nfahrenheit = (celsius * 9/5) + 32\nprint(f"The temperature in Fahrenheit is {fahrenheit}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code17', 'output17')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code17', 'output17', 'The temperature in Fahrenheit is [fahrenheit]')">Run Code</button>
                         <pre id="output17" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>18. Simple Interest Calculator</h3>
                         <p>Write a Python program that asks the user for the principal amount, rate of interest, and time period, then calculates and prints the simple interest. For example:</p>
                         <textarea id="code18" class="form-control" rows="3">principal = float(input("Enter the principal amount: "))\nrate = float(input("Enter the rate of interest: "))\ntime = float(input("Enter the time period in years: "))\nsimple_interest = (principal * rate * time) / 100\nprint(f"The simple interest is {simple_interest}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code18', 'output18')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code18', 'output18', 'The simple interest is [simple interest]')">Run Code</button>
                         <pre id="output18" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>19. BMI Calculator</h3>
                         <p>Write a Python program that asks the user for their weight (in kilograms) and height (in meters), then calculates and prints their Body Mass Index (BMI). For example:</p>
                         <textarea id="code19" class="form-control" rows="3">weight = float(input("Enter your weight in kilograms: "))\nheight = float(input("Enter your height in meters: "))\nbmi = weight / (height ** 2)\nprint(f"Your BMI is {bmi}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code19', 'output19')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code19', 'output19', 'Your BMI is [bmi]')">Run Code</button>
                         <pre id="output19" class="mt-2"></pre>
                     </div>
                     <div class="quiz-section">
                         <h3>20. Distance Converter</h3>
                         <p>Write a Python program that asks the user for a distance in kilometers and then converts it to miles. For example:</p>
                         <textarea id="code20" class="form-control" rows="3">kilometers = float(input("Enter distance in kilometers: "))\nmiles = kilometers * 0.621371\nprint(f"The distance in miles is {miles}")</textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code20', 'output20')">Run Code</button>
+                        <button class="btn btn-primary mt-2" onclick="runCode('code20', 'output20', 'The distance in miles is [miles]')">Run Code</button>
                         <pre id="output20" class="mt-2"></pre>
                     </div>
                 </div>
@@ -190,12 +190,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.0.0/skulpt-stdlib.js"></script>
     <script src="style.js"></script>
     <script>
-        function runCode(codeId, outputId) {
+        function runCode(codeId, outputId, expectedOutput) {
             var code = document.getElementById(codeId).value;
             var outputElem = document.getElementById(outputId);
             outputElem.innerHTML = '';
             Sk.configure({ output: function(text) { outputElem.innerHTML += text; } });
-            Sk.importMainWithBody("<stdin>", false, code, true);
+            Sk.importMainWithBody("<stdin>", false, code, true).then(function() {
+                if (outputElem.innerHTML.trim() === expectedOutput.trim()) {
+                    outputElem.innerHTML += '\nCongratulations! Your output is correct.';
+                } else {
+                    outputElem.innerHTML += '\nTry again. Your output did not match the expected output.';
+                }
+            });
         }
     </script>
 </body>
