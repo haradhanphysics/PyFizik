@@ -190,17 +190,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.0.0/skulpt-stdlib.js"></script>
     <script src="style.js"></script>
     <script>
+        function builtinRead(x) {
+            if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined) {
+                throw "File not found: '" + x + "'";
+            }
+            return Sk.builtinFiles["files"][x];
+        }
+
         function runCode(codeId, outputId, expectedOutput) {
             var code = document.getElementById(codeId).value;
             var outputElem = document.getElementById(outputId);
             outputElem.innerHTML = '';
-            Sk.configure({ output: function(text) { outputElem.innerHTML += text; } });
+            Sk.configure({ output: function(text) { outputElem.innerHTML += text; }, read: builtinRead });
             Sk.importMainWithBody("<stdin>", false, code, true).then(function() {
                 if (outputElem.innerHTML.trim() === expectedOutput.trim()) {
                     outputElem.innerHTML += '\nCongratulations! Your output is correct.';
                 } else {
                     outputElem.innerHTML += '\nTry again. Your output did not match the expected output.';
                 }
+            }).catch(function(err) {
+                outputElem.innerHTML = 'Error: ' + err.toString();
             });
         }
     </script>
