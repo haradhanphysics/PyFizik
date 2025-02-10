@@ -198,6 +198,7 @@
         }
 
         function runCode(codeId, outputId, expectedOutput, hint) {
+            console.log('Running code...');
             var code = document.getElementById(codeId).value;
             var outputElem = document.getElementById(outputId);
             outputElem.innerHTML = '';
