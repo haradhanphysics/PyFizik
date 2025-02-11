@@ -27,11 +27,15 @@
                         <h3>1. Basic Hello World</h3>
                         <p>Write a Python program that prints "Hello, World!" to the console.</p>
                         <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="showAnswer('answer1')">Show Answer</button>
+                        <pre id="answer1" class="mt-2" style="display:none;">print("Hello, World!")</pre>
                     </div>
                     <div class="quiz-section">
                         <h3>2. Personalized Greeting</h3>
                         <p>Modify the program to print a personalized greeting. For example, if your name is John, the output should be "Hello, John!".</p>
                         <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="showAnswer('answer2')">Show Answer</button>
+                        <pre id="answer2" class="mt-2" style="display:none;">name = "John"\nprint(f"Hello, {name}!")</pre>
                     </div>
                     <div class="quiz-section">
                         <h3>3. Multiple Lines</h3>
@@ -142,9 +146,9 @@
                     <div class="quiz-section">
                         <h3>20. Distance Converter</h3>
                         <p>Write a Python program that asks the user for a distance in kilometers and then converts it to miles. For example:</p>
-                        <textarea id="code20" class="form-control" rows="3"></textarea>
-                        <button class="btn btn-primary mt-2" onclick="runCode('code20', 'output20', 'The distance in miles is [miles]', 'Convert the distance from kilometers to miles.')">Run Code</button>
-                        <pre id="output20" class="mt-2"></pre>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="showAnswer('answer20')">Show Answer</button>
+                        <pre id="answer20" class="mt-2" style="display:none;">km = float(input("Enter distance in kilometers: "))\nmiles = km * 0.621371\nprint(f"The distance in miles is {miles}")</pre>
                     </div>
                 </div>
                 <div class="text-wrap">
@@ -173,6 +177,15 @@
             var outputElem = document.getElementById(outputId);
             var trinketUrl = "https://trinket.io/embed/python3#code=" + encodeURIComponent(code);
             outputElem.src = trinketUrl;
+        }
+
+        function showAnswer(answerId) {
+            var answerElem = document.getElementById(answerId);
+            if (answerElem.style.display === "none") {
+                answerElem.style.display = "block";
+            } else {
+                answerElem.style.display = "none";
+            }
         }
     </script>
 </body>
