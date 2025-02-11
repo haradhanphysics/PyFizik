@@ -165,8 +165,33 @@
                         <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
                         <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer17', 'explanation17')">Show Answer</button>
                         <pre id="answer17" class="mt-2" style="display:none;">celsius = float(input("Enter temperature in Celsius: "))\nfahrenheit = (celsius * 9/5) + 32\nprint(f"The temperature in Fahrenheit is {fahrenheit}")</pre>
-                        <p id="explanation17" class="mt-2" style="display:none;">This code uses
-    </div>
+                        <p id="explanation17" class="mt-2" style="display:none;">This code uses the <code>input()</code> function to ask the user for a temperature in Celsius and converts the input to a float using <code>float()</code>. The <code>print()</code> function then outputs the temperature in Fahrenheit using the formula <code>(celsius * 9/5) + 32</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>18. Area of a Circle</h3>
+                        <p>Write a Python program that asks the user for the radius of a circle and then calculates and prints the area of the circle. For example:</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer18', 'explanation18')">Show Answer</button>
+                        <pre id="answer18" class="mt-2" style="display:none;">import math\nradius = float(input("Enter the radius of the circle: "))\narea = math.pi * radius ** 2\nprint(f"The area of the circle is {area}")</pre>
+                        <p id="explanation18" class="mt-2" style="display:none;">This code uses the <code>input()</code> function to ask the user for the radius of a circle and converts the input to a float using <code>float()</code>. The <code>math.pi</code> constant is used to calculate the area of the circle using the formula <code>math.pi * radius ** 2</code>. The <code>print()</code> function then outputs the area of the circle.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>19. Simple Interest</h3>
+                        <p>Write a Python program that calculates the simple interest for a given principal amount, rate of interest, and time period. For example:</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer19', 'explanation19')">Show Answer</button>
+                        <pre id="answer19" class="mt-2" style="display:none;">principal = float(input("Enter the principal amount: "))\nrate = float(input("Enter the rate of interest: "))\ntime = float(input("Enter the time period in years: "))\ninterest = (principal * rate * time) / 100\nprint(f"The simple interest is {interest}")</pre>
+                        <p id="explanation19" class="mt-2" style="display:none;">This code uses the <code>input()</code> function to ask the user for the principal amount, rate of interest, and time period, and converts the inputs to floats using <code>float()</code>. The simple interest is calculated using the formula <code>(principal * rate * time) / 100</code>. The <code>print()</code> function then outputs the simple interest.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>20. BMI Calculator</h3>
+                        <p>Write a Python program that calculates the Body Mass Index (BMI) for a given weight and height. For example:</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer20', 'explanation20')">Show Answer</button>
+                        <pre id="answer20" class="mt-2" style="display:none;">weight = float(input("Enter your weight in kilograms: "))\nheight = float(input("Enter your height in meters: "))\nbmi = weight / (height ** 2)\nprint(f"Your BMI is {bmi}")</pre>
+                        <p id="explanation20" class="mt-2" style="display:none;">This code uses the <code>input()</code> function to ask the user for their weight and height, and converts the inputs to floats using <code>float()</code>. The BMI is calculated using the formula <code>weight / (height ** 2)</code>. The <code>print()</code> function then outputs the BMI.</p>
+                    </div>
+                </div>
                 <div class="text-wrap">
                     <h2>Submission</h2>
                     <p>Save your Python programs in a file named <code>hello_homework.py</code>. Submit the file to your instructor by the due date.</p>
