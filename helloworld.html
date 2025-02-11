@@ -31,7 +31,7 @@
                 <div class="text-wrap">
                     <h2>Simple Python Code Example</h2>
                     <p class="text-wrap">Let's start with a simple Python program that prints <span style="color:blue">Hello, World!</span> to the console and performs a few basic operations.</p>
-                    <iframe src="https://trinket.io/embed/python3/9e4b4d7d3e" width="100%" height="500px"></iframe>
+                    <iframe src="https://trinket.io/embed/python3#code=print(%22Hello,%20World!%22)%0A%0A%23%20Variables%20and%20Data%20Types%0Ax%20%3D%205%20%23%20Integer%0Ay%20%3D%203.14%20%23%20Float%0Aname%20%3D%20%22Alice%22%20%23%20String%0Ais_student%20%3D%20True%20%23%20Boolean%0A%0A%23%20Basic%20Arithmetic%20Operations%0Asum_result%20%3D%20x%20%2B%20y%20%23%20Addition%0Adiff_result%20%3D%20x%20-%20y%20%23%20Subtraction%0Aprod_result%20%3D%20x%20*%20y%20%23%20Multiplication%0Aquot_result%20%3D%20x%20/%20y%20%23%20Division%0A%0A%23%20Print%20the%20results%20of%20arithmetic%20operations%0Aprint(%22Sum:%22,%20sum_result)%0Aprint(%22Difference:%22,%20diff_result)%0Aprint(%22Product:%22,%20prod_result)%0Aprint(%22Quotient:%22,%20quot_result)%0A%0A%23%20Lists%0Afruits%20%3D%20%5B%22apple%22,%20%22banana%22,%20%22cherry%22%5D%20%23%20List%20of%20strings%0Aprint(%22Fruits:%22,%20fruits)%0A%0A%23%20Accessing%20list%20elements%0Aprint(%22First%20fruit:%22,%20fruits%5B0%5D)%20%23%20Lists%20are%20zero-indexed%0A%0A%23%20Adding%20an%20element%20to%20the%20list%0Afruits.append(%22orange%22)%0Aprint(%22Updated%20fruits:%22,%20fruits)%0A%0A%23%20Loops%0A%23%20For%20loop%0Afor%20fruit%20in%20fruits%3A%0A%20%20%20%20print(%22Fruit:%22,%20fruit)%0A%0A%23%20While%20loop%0Acount%20%3D%200%0Awhile%20count%20%3C%205%3A%0A%20%20%20%20print(%22Count:%22,%20count)%0A%20%20%20%20count%20%2B%3D%201%20%23%20Increment%20count%20by%201%0A%0A%23%20Functions%0Adef%20greet(name)%3A%0A%20%20%20%20%22%22%22This%20function%20greets%20the%20person%20with%20the%20given%20name.%22%22%22%0A%20%20%20%20return%20f%22Hello,%20%7Bname%7D!%22%0A%0A%23%20Calling%20the%20function%0Agreeting%20%3D%20greet(%22Alice%22)%0Aprint(greeting)%0A%0A%23%20Conditional%20Statements%0Aage%20%3D%2020%0Aif%20age%20%3E%3D%2018%3A%0A%20%20%20%20print(%22You%20are%20an%20adult.%22)%0Aelse%3A%0A%20%20%20%20print(%22You%20are%20a%20minor.%22)" width="100%" height="500px"></iframe>
                 </div>
                 <div class="text-wrap">
                     <h3>Explanation of Basic Concepts</h3>
@@ -87,15 +87,15 @@
                     <p>In Python, variables are used to store data that can be used and manipulated throughout your program. You can think of variables as containers that hold information. The <code>input()</code> function is used to take input from the user. Let's look at some examples to understand how variables and the <code>input()</code> function work.</p>
                     
                     <h4>Example 1: Using Variables</h4>
-                    <iframe src="https://trinket.io/embed/python3/1e4b4d7d3e" width="100%" height="200px"></iframe>
+                    <iframe src="https://trinket.io/embed/python3#code=name%20%3D%20%22Alice%22%0Aage%20%3D%2025%0A%0Aprint(%22Name:%22,%20name)%0Aprint(%22Age:%22,%20age)" width="100%" height="200px"></iframe>
                     <p>In this example, we assign the string "Alice" to the variable <code>name</code> and the integer 25 to the variable <code>age</code>. We then use the <code>print()</code> function to display the values of these variables.</p>
                     
                     <h4>Example 2: Using the <code>input()</code> Function</h4>
-                    <iframe src="https://trinket.io/embed/python3/2e4b4d7d3e" width="100%" height="200px"></iframe>
+                    <iframe src="https://trinket.io/embed/python3#code=name%20%3D%20input(%22Enter%20your%20name:%20%22)%0Aage%20%3D%20input(%22Enter%20your%20age:%20%22)%0A%0Aprint(%22Name:%22,%20name)%0Aprint(%22Age:%22,%20age)" width="100%" height="200px"></iframe>
                     <p>In this example, we use the <code>input()</code> function to take input from the user. The <code>input()</code> function displays a prompt and waits for the user to enter a value. The entered value is then stored in the variable. We use the <code>print()</code> function to display the user input.</p>
                     
                     <h4>Example 3: Converting Input to Integer</h4>
-                    <iframe src="https://trinket.io/embed/python3/3e4b4d7d3e" width="100%" height="200px"></iframe>
+                    <iframe src="https://trinket.io/embed/python3#code=age%20%3D%20input(%22Enter%20your%20age:%20%22)%0Aage%20%3D%20int(age)%0A%0Aprint(%22Your%20age%20is:%22,%20age)" width="100%" height="200px"></iframe>
                     <p>By default, the <code>input()</code> function returns a string. If you need to perform numerical operations on the input, you must convert it to an integer using the <code>int()</code> function. In this example, we take the user's age as input, convert it to an integer, and then print it.</p>
                 </div>
                 <div class="text-wrap">
