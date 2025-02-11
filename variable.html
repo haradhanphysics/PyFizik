@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Introduction to Python Variables and Data Types</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script> 
+    <script src="https://trinket.io/embed/python3"></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Introduction to Python Variables and Data Types</h1>
+                <div class="text-wrap">
+                    <p>Welcome back! In our previous tutorial, we wrote a simple Python script <code>hello.py</code> that printed "Hello, world!" to the console. That was a great start, but now it's time to dive deeper into the world of Python programming. In this section, we'll explore variables and data types, which are fundamental concepts in any programming language.</p>
+                    <blockquote>
+                        <p><em>Once upon a time in the magical land of Pythonia, there were two best friends named Var and Data. Var was a clever little container who loved to hold different kinds of treasures, while Data was a shape-shifter who could transform into various forms.</em></p>
+                        <p><em>One sunny day, Var and Data decided to go on an adventure to explore the different types of treasures they could find in Pythonia. As they walked through the enchanted forest, they came across a wise old owl named Professor Py.</em></p>
+                        <p><em>"Hello, young adventurers!" greeted Professor Py. "What brings you to this part of the forest?"</em></p>
+                        <p><em>"We want to learn about the different types of treasures we can hold," said Var excitedly.</em></p>
+                        <p><em>"Ah, you seek knowledge about data types!" exclaimed Professor Py. "Let me show you."</em></p>
+                        <p><em>Professor Py led them to a clearing where four magical stones lay on the ground. Each stone represented a different data type.</em></p>
+                        <p><em>The first stone was solid and unyielding. "This is an Integer," said Professor Py. "It represents whole numbers, like 42 or -7."</em></p>
+                        <p><em>The second stone was smooth and fluid. "This is a Float," continued Professor Py. "It represents decimal numbers, like 3.14 or -0.001."</em></p>
+                        <p><em>The third stone was colorful and vibrant. "This is a String," explained Professor Py. "It represents text, like 'Hello, world!' or 'Python'."</em></p>
+                        <p><em>The fourth stone was simple and clear. "This is a Boolean," said Professor Py. "It represents True or False values."</em></p>
+                        <p><em>Var and Data were amazed by the different forms Data could take. They realized that by working together, they could hold and transform any treasure they found in Pythonia.</em></p>
+                        <p><em>From that day on, Var and Data became the best team in all of Pythonia. Var would hold the treasures, and Data would transform into the appropriate form. They helped many programmers on their journeys, making their code more powerful and efficient.</em></p>
+                        <p><em>And so, Var and Data continued their adventures, always remembering the wise words of Professor Py and the magical stones that taught them about the wonderful world of data types.</em></p>
+                    </blockquote>
+                    <p>Understanding variables and data types is crucial as they form the building blocks of any Python program. As we continue our journey, we'll see how these concepts are used to create more complex and powerful programs.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Variables</h2>
+                    <p>A variable in Python is like a container that holds data. You can think of it as a label that you attach to a piece of information so you can easily refer to it later. Variables allow you to store, modify, and retrieve data throughout your program.</p>
+                    <h3>Example:</h3>
+                    <iframe src="https://trinket.io/embed/python3#code=message%20%3D%20%22Hello,%20world!%22%0Aprint(message)" width="100%" height="200px"></iframe>
+                    <p>In this example, we created a variable named <code>message</code> and assigned it the value <code>"Hello, world!"</code>. When we use the <code>print</code> function, it outputs the value stored in <code>message</code>.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Naming and Using Variables: Conventions and Guidelines</h2>
+                    <p>When naming and using variables in Python, following certain conventions and guidelines can make your code more readable and easier to understand. Here are some key points to keep in mind:</p>
+                    <h3>Naming Conventions</h3>
+                    <ul>
+                        <li><strong>Use Descriptive Names</strong>: Choose variable names that clearly describe the data they hold. For example, <code>age</code>, <code>total_price</code>, and <code>user_name</code> are more descriptive than <code>a</code>, <code>tp</code>, and <code>u</code>.</li>
+                        <li><strong>Use Lowercase Letters</strong>: Variable names should be written in lowercase letters. If a name consists of multiple words, use underscores to separate them (snake_case). For example, <code>first_name</code>, <code>last_name</code>, and <code>total_amount</code>.</li>
+                        <li><strong>Avoid Reserved Words</strong>: Do not use Python reserved words (keywords) as variable names. Examples of reserved words include <code>if</code>, <code>else</code>, <code>while</code>, <code>for</code>, <code>def</code>, and <code>class</code>.</li>
+                        <li><strong>Be Consistent</strong>: Stick to a consistent naming style throughout your codebase. This helps maintain readability and makes it easier for others to understand your code.</li>
+                    </ul>
+                    <h3>Guidelines for Using Variables</h3>
+                    <ul>
+                        <li><strong>Initialize Variables</strong>: Always initialize variables before using them. This ensures that they have a defined value and helps prevent errors.</li>
+                        <li><strong>Use Constants for Fixed Values</strong>: If a variable holds a value that does not change, consider defining it as a constant. By convention, constant names are written in uppercase letters with underscores separating words. For example, <code>PI = 3.14</code> and <code>MAX_USERS = 100</code>.</li>
+                        <li><strong>Keep Scope in Mind</strong>: Be aware of the scope of your variables. Variables defined inside a function are local to that function, while variables defined outside any function are global.</li>
+                        <li><strong>Avoid Magic Numbers</strong>: Instead of using hard-coded numbers in your code, assign them to descriptive variables. This makes your code more readable and easier to maintain. For example, instead of <code>if age > 18</code>, use <code>MINIMUM_AGE = 18</code> and then <code>if age > MINIMUM_AGE</code>.</li>
+                    </ul>
+                    <h3>Example:</h3>
+                    <iframe src="https://trinket.io/embed/python3#code=%23%20Good%20variable%20names%0Afirst_name%20%3D%20%22John%22%0Alast_name%20%3D%20%22Doe%22%0Aage%20%3D%2030%0Ais_employee%20%3D%20True%0A%0A%23%20Constants%0API%20%3D%203.14159%0AMAX_CONNECTIONS%20%3D%20100%0A%0A%23%20Using%20variables%0Afull_name%20%3D%20first_name%20%2B%20%22%20%22%20%2B%20last_name%0Aprint(f%22Name%3A%20%7Bfull_name%7D,%20Age%3A%20%7Bage%7D,%20Employee%3A%20%7Bis_employee%7D%22)" width="100%" height="200px"></iframe>
+                    <p>By following these conventions and guidelines, you can write Python code that is clean, readable, and easy to understand. This not only helps you as a developer but also makes it easier for others to collaborate on your code.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Avoiding Name Errors When Using Variables</h2>
+                    <blockquote>
+                        <p><em>In our land of Pythonia, there was a young programmer named Alex. Alex was excited to write his first Python script and decided to create a simple program to greet the world. He wrote:</em></p>
+                        <pre><code>print(greeting)</code></pre>
+                        <p><em>Alex ran the script, expecting to see a friendly "Hello, world!" on the screen. Instead, there were greeted with a <code>NameError</code>! Confused, Alex scratched his head and thought, "Who is this NameError, and why are they ruining my day?"</em></p>
+                        <p><em>Determined to solve the mystery, Alex consulted the wise Python documentation and discovered that a <code>NameError</code> occurs when you try to use a variable that hasn't been defined. Realizing their mistake, Alex quickly added the missing line:</em></p>
+                        <pre><code>greeting = "Hello, world!"<br>print(greeting)</code></pre>
+                        <p><em>This time, the script ran perfectly, and Alex was overjoyed. He learned an important lesson that day: always define your variables before using them, or the mischievous NameError will come to visit!</em></p>
+                        <p><em>And so, Alex continued his programming journey, always remembering to initialize their variables, and they lived happily ever after in the land of Pythonia.</em></p>
+                    </blockquote>
+                    <p>A <code>NameError</code> in Python occurs when you try to use a variable that has not been defined. This can happen if you misspell the variable name or forget to initialize it before using it.</p>
+                    <h3>Example of a NameError:</h3>
+                    <iframe src="https://trinket.io/embed/python3#code=print(message)" width="100%" height="200px"></iframe>
+                    <p>If you run this code without defining <code>message</code> first, Python will raise a <code>NameError</code> because it doesn't know what <code>message</code> refers to.</p>
+                    <h3>How to Avoid NameErrors:</h3>
+                    <ul>
+                        <li><strong>Initialize Variables</strong>: Always initialize your variables before using them.
+                            <iframe src="https://trinket.io/embed/python3#code=message%20%3D%20%22Hello,%20world!%22%0Aprint(message)" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>Check for Typos</strong>: Ensure that you spell variable names correctly and consistently.
+                            <iframe src="https://trinket.io/embed/python3#code=user_name%20%3D%20%22Alice%22%0Aprint(user_name)%20%23%20Correct%0Aprint(username)%20%23%20NameError%3A%20name%20%27username%27%20is%20not%20defined" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>Use Descriptive Names</strong>: Using descriptive names can help you remember what each variable is for, reducing the likelihood of errors.
+                            <iframe src="https://trinket.io/embed/python3#code=total_price%20%3D%20100%0Aprint(total_price)" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>Scope Awareness</strong>: Be aware of the scope of your variables. Variables defined inside a function are not accessible outside of it.
+                            <iframe src="https://trinket.io/embed/python3#code=def%20greet()%3A%0A%20%20%20%20message%20%3D%20%22Hello%22%0A%20%20%20%20print(message)%0A%0Agreet()%0Aprint(message)%20%23%20NameError%3A%20name%20%27message%27%20is%20not%20defined" width="100%" height="200px"></iframe>
+                        </li>
+                    </ul>
+                    <p>By following these practices, you can minimize the chances of encountering <code>NameError</code> in your Python programs.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Data Types</h2>
+                    <p>Data types specify the kind of data that can be stored in a variable. Python has several built-in data types, including:</p>
+                    <ul>
+                        <li><strong>Integers</strong>: Whole numbers, e.g., <code>42</code>, <code>-7</code></li>
+                        <li><strong>Floats</strong>: Decimal numbers, e.g., <code>3.14</code>, <code>-0.001</code></li>
+                        <li><strong>Strings</strong>: Text, e.g., <code>"Hello, world!"</code>, <code>"Python"</code></li>
+                        <li><strong>Booleans</strong>: True or False values, e.g., <code>True</code>, <code>False</code></li>
+                    </ul>
+                    <h3>Example:</h3>
+                    <iframe src="https://trinket.io/embed/python3#code=age%20%3D%2025%0Aheight%20%3D%201.75%0Aname%20%3D%20%22Alice%22%0Ais_student%20%3D%20True%0Aprint(f%22Age%3A%20%7Bage%7D%22)%0Aprint(f%22Height%3A%20%7Bheight%7D%22)%0Aprint(f%22Name%3A%20%7Bname%7D%22)%0Aprint(f%22Is%20Student%3A%20%7Bis_student%7D%22)" width="100%" height="200px"></iframe>
+                </div>
+                <div class="text-wrap">
+                    <h2>Strings in Python</h2>
+                    <p>Strings are one of the most commonly used data types in Python. They are sequences of characters enclosed in either single quotes (<code>'</code>) or double quotes (<code>"</code>). Strings are used to represent text and can include letters, numbers, symbols, and whitespace.</p>
+                    <h3>Basic Properties of Strings</h3>
+                    <ul>
+                        <li><strong>Creating Strings</strong>: You can create a string by enclosing characters in quotes.
+                            <iframe src="https://trinket.io/embed/python3#code=greeting%20%3D%20%22Hello,%20world!%22%0Aname%20%3D%20%27Alice%27" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>String Length</strong>: Use the <code>len()</code> function to find the length of a string.
+                            <iframe src="https://trinket.io/embed/python3#code=message%20%3D%20%22Hello%22%0Aprint(len(message))%20%23%20Output%3A%205" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>String Indexing</strong>: Access individual characters in a string using indexing. Indexing starts at 0.
+                            <iframe src="https://trinket.io/embed/python3#code=word%20%3D%20%22Python%22%0Aprint(word%5B0%5D)%20%23%20Output%3A%20P%0Aprint(word%5B1%5D)%20%23%20Output%3A%20y" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>String Slicing</strong>: Extract a substring using slicing. Specify the start and end indices.
+                            <iframe src="https://trinket.io/embed/python3#code=text%20%3D%20%22Hello,%20world!%22%0Aprint(text%5B0%3A5%5D)%20%23%20Output%3A%20Hello%0Aprint(text%5B7%3A12%5D)%20%23%20Output%3A%20world" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>String Concatenation</strong>: Combine strings using the <code>+</code> operator.
+                            <iframe src="https://trinket.io/embed/python3#code=first_name%20%3D%20%22John%22%0Alast_name%20%3D%20%22Doe%22%0Afull_name%20%3D%20first_name%20%2B%20%22%20%22%20%2B%20last_name%0Aprint(full_name)%20%23%20Output%3A%20John%20Doe" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>String Methods</strong>: Python provides various built-in methods to manipulate strings.
+                            <iframe src="https://trinket.io/embed/python3#code=message%20%3D%20%22hello,%20world!%22%0Aprint(message.upper())%20%23%20Output%3A%20HELLO,%20WORLD!%0Aprint(message.lower())%20%23%20Output%3A%20hello,%20world!%0Aprint(message.capitalize())%20%23%20Output%3A%20Hello,%20world!%0Aprint(message.replace(%22world%22,%20%22Python%22))%20%23%20Output%3A%20hello,%20Python!" width="100%" height="200px"></iframe>
+                        </li>
+                    </ul>
+                    <p>Strings are versatile and powerful, making them essential for handling text data in Python. Understanding their properties and methods will help you manipulate and work with text effectively in your programs.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Avoiding Syntax Errors in Strings</h2>
+                    <p>When working with strings in Python, it's important to avoid syntax errors that can disrupt your code. Here are some common pitfalls and how to avoid them:</p>
+                    <ul>
+                        <li><strong>Mismatched Quotes</strong>: Ensure that you use matching quotes to enclose your strings. Mixing single and double quotes without proper handling can lead to syntax errors.
+                            <iframe src="https://trinket.io/embed/python3#code=%23%20Correct%0Amessage%20%3D%20%22Hello,%20world!%22%0Agreeting%20%3D%20%27Hello,%20world!%27%0A%0A%23%20Incorrect%0Amessage%20%3D%20%22Hello,%20world!%27" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>Escaping Quotes</strong>: If your string contains quotes, use the backslash (<code>\</code>) to escape them.
+                            <iframe src="https://trinket.io/embed/python3#code=%23%20Correct%0Aquote%20%3D%20%22She%20said,%20%5C%22Hello!%5C%22%22%0Asingle_quote%20%3D%20%27It%5C%27s%20a%20beautiful%20day!%27%0A%0A%23%20Incorrect%0Aquote%20%3D%20%22She%20said,%20%22Hello!%22%22%0Asingle_quote%20%3D%20%27It%27s%20a%20beautiful%20day!%27" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>Using Triple Quotes</strong>: For strings that span multiple lines or contain both single and double quotes, use triple quotes (<code>'''</code> or <code>"""</code>).
+                            <iframe src="https://trinket.io/embed/python3#code=%23%20Correct%0Amultiline_string%20%3D%20%22%22%22This%20is%20a%20string%0Athat%20spans%20multiple%20lines.%22%22%22%0A%0Acomplex_string%20%3D%20%27%27%27He%20said,%20%22It%27s%20a%20beautiful%20day!%22%27%27%27%0A%0A%23%20Incorrect%0Amultiline_string%20%3D%20%22This%20is%20a%20string%0Athat%20spans%20multiple%20lines.%22" width="100%" height="200px"></iframe>
+                        </li>
+                        <li><strong>Raw Strings</strong>: Use raw strings (prefix with <code>r</code>) to avoid escaping backslashes, especially useful for regular expressions and file paths.
+                            <iframe src="https://trinket.io/embed/python3#code=%23%20Correct%0Afile_path%20%3D%20r%22C%3A%5CUsers%5CName%5CDocuments%5Cfile.txt%22%0A%0A%23%20Incorrect%0Afile_path%20%3D%20%22C%3A%5C%5CUsers%5C%5CName%5C%5CDocuments%5C%5Cfile.txt%22" width="100%" height="200px"></iframe>
+                        </li>
+                    </ul>
+                    <h3>Example:</h3>
+                    <iframe src="https://trinket.io/embed/python3#code=%23%20Correct%20usage%20of%20quotes%20and%20escaping%0Amessage%20%3D%20%22Hello,%20world!%22%0Aquote%20%3D%20%22She%20said,%20%5C%22Hello!%5C%22%22%0Amultiline_string%20%3D%20%22%22%22This%20is%20a%20string%0Athat%20spans%20multiple%20lines.%22%22%22%0Afile_path%20%3D%20r%22C%3A%5CUsers%5CName%5CDocuments%5Cfile.txt%22%0A%0Aprint(message)%0Aprint(quote)%0Aprint(multiline_string)%0Aprint(file_path)" width="100%" height="200px"></iframe>
+                    <p>By following these guidelines, you can avoid common syntax errors when working with strings in Python, ensuring your code runs smoothly and efficiently.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Number Data Types</h2>
+                    <p>In Python, number data types are used to store numeric values. The two most commonly used number data types are integers and floats.</p>
+                    <h3>Integers</h3>
+                    <p>Integers are whole numbers without a decimal point. They can be positive, negative, or zero.</p>
+                    <h4>Characteristics of Integers:</h4>
+                    <ul>
+                        <li><strong>Whole Numbers</strong>: Integers do not have a fractional part.</li>
+                        <li><strong>Unlimited Precision</strong>: Python integers can be arbitrarily large.</li>
+                        <li><strong>Type</strong>: The type of an integer is <code>int</code>.</li>
+                    </ul>
+                    <h4>Examples:</h4>
+                    <iframe src="https://trinket.io/embed/python3#code=positive_integer%20%3D%2042%0Anegative_integer%20%3D%20-7%0Azero%20%3D%200" width="100%" height="200px"></iframe>
+                    <h3>Floats</h3>
+                    <p>Floats are numbers that have a decimal point. They are used to represent real numbers.</p>
+                    <h4>Characteristics of Floats:</h4>
+                    <ul>
+                        <li><strong>Decimal Numbers</strong>: Floats have a fractional part.</li>
+                        <li><strong>Precision</strong>: Floats have limited precision due to their representation in memory.</li>
+                        <li><strong>Type</strong>: The type of a float is <code>float</code>.</li>
+                    </ul>
+                    <h4>Examples:</h4>
+                    <iframe src="https://trinket.io/embed/python3#code=positive_float%20%3D%203.14%0Anegative_float%20%3D%20-0.001%0Azero_float%20%3D%200.0" width="100%" height="200px"></iframe>
+                    <h3>Common Errors with Number Data Types</h3>
+                    <p>New programmers often encounter errors when working with number data types. Here are some common pitfalls and how to avoid them:</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Error Type</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                                <th>Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>TypeError</strong></td>
+                                <td>Occurs when performing operations on incompatible types.</td>
+                                <td><code>result = "3" + 4</code></td>
+                                <td>Ensure both operands are of the same type: <code>result = int("3") + 4</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>ValueError</strong></td>
+                                <td>Raised when a function receives an argument of the correct type but inappropriate value.</td>
+                                <td><code>number = int("abc")</code></td>
+                                <td>Validate input before conversion: <code>if input_str.isdigit(): number = int(input_str)</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>OverflowError</strong></td>
+                                <td>Raised when the result of an arithmetic operation is too large to be expressed within the range of the number data type.</td>
+                                <td><code>large_number = 10 ** 1000</code></td>
+                                <td>Use appropriate data types or libraries that handle large numbers.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ZeroDivisionError</strong></td>
+                                <td>Occurs when attempting to divide by zero.</td>
+                                <td><code>result = 10 / 0</code></td>
+                                <td>Check the divisor before division: <code>if divisor != 0: result = 10 / divisor</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Floating Point Precision</strong></td>
+                                <td>Issues arise due to the limited precision of floating-point numbers.</td>
+                                <td><code>result = 0.1 + 0.2</code> (may not equal 0.3 exactly)</td>
+                                <td>Use the <code>decimal</code> module for precise decimal arithmetic.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Example Code Using Number Data Types</h3>
+                    <p>Let's look at some examples of how to use number data types in Python.</p>
+                    <h4>Example 1: Basic Arithmetic Operations</h4>
+                    <iframe src="https://trinket.io/embed/python3#code=%23%20Integers%0Aa%20%3D%2010%0Ab%20%3D%203%0A%0A%23%20Addition%0Asum_result%20%3D%20a%20%2B%20b%0Aprint(f%22Sum%3A%20%7Bsum_result%7D%22)%20%23%20Output%3A%20Sum%3A%2013%0A%0A%23%20Subtraction%0Asub_result%20%3D%20a%20-%20b%0Aprint(f%22Difference%3A%20%7Bsub_result%7D%22)%20%23%20Output%3A%207%0A%0A%23%20Multiplication%0Amul_result%20%3D%20a%20*%20b%0Aprint(f%22Product%3A%20%7Bmul_result%7D%22)%20%23%20Output%3A%2030%0A%0A%23%20Division%0Adiv_result%20%3D%20a%20/%20b%0Aprint(f%22Quotient%3A%20%7Bdiv_result%7D%22)%20%23%20Output%3A%203.3333333333333335%0A%0A%23%20Floor%20Division%0Afloor_div_result%20%3D%20a%20//%20b%0Aprint(f%22Floor%20Division%3A%20%7Bfloor_div_result%7D%22)%20%23%20Output%3A%203%0A%0A%23%20Modulus%0Amod_result%20%3D%20a%20%25%20b%0Aprint(f%22Remainder%3A%20%7Bmod_result%7D%22)%20%23%20Output%3A%201%0A%0A%23%20Exponentiation%0Aexp_result%20%3D%20a%20**%20b%0Aprint(f%22Exponentiation%3A%20%7Bexp_result%7D%22)%20%23%20Output%3A%201000" width="100%" height="500px"></iframe>
+                    <h4>Example 2: Working with Floats</h4>
+                    <iframe src="https://trinket.io/embed/python3#code=%23%20Floats%0Ax%20%3D%205.75%0Ay%20%3D%202.5%0A%0A%23%20Addition%0Asum_result%20%3D%20x%20%2B%20y%0Aprint(f%22Sum%3A%20%7Bsum_result%7D%22)%20%23%20Output%3A%208.25%0A%0A%23%20Subtraction%0Asub_result%20%3D%20x%20-%20y%0Aprint(f%22Difference%3A%20%7Bsub_result%7D%22)%20%23%20Output%3A%203.25%0A%0A%23%20Multiplication%0Amul_result%20%3D%20x%20*%20y%0Aprint(f%22Product%3A%20%7Bmul_result%7D%22)%20%23%20Output%3A%2014.375%0A%0A%23%20Division%0Adiv_result%20%3D%20x%20/%20y%0Aprint(f%22Quotient%3A%20%7Bdiv_result%7D%22)%20%23%20Output%3A%202.3%0A%0A%23%20Floor%20Division%0Afloor_div_result%20%3D%20x%20//%20y%0Aprint(f%22Floor%20Division%3A%20%7Bfloor_div_result%7D%22)%20%23%20Output%3A%202.0%0A%0A%23%20Modulus%0Amod_result%20%3D%20x%20%25%20y%0Aprint(f%22Remainder%3A%20%7Bmod_result%7D%22)%20%23%20Output%3A%200.75%0A%0A%23%20Exponentiation%0Aexp_result%20%3D%20x%20**%20y%0Aprint(f%22Exponentiation%3A%20%7Bexp_result%7D%22)%20%23%20Output%3A%2046.65625" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="footer"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>
