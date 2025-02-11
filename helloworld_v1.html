@@ -29,7 +29,68 @@
                 <div class="text-wrap">
                     <h2>Simple Python Code Example</h2>
                     <p class="text-wrap">Let's start with a simple Python program that prints <span style="color:blue">Hello, World!</span> to the console and performs a few basic operations.</p>
-                    <iframe src="https://trinket.io/embed/python3/9e4b4d7d3e" width="100%" height="500px"></iframe>
+                    <pre><code class="language-python"># This is a comment. Comments are ignored by the Python interpreter.
+                    # They are used to explain the code and make it more readable.
+
+                    # Print function
+                    print(<span style="color:blue">"Hello, World!"</span>)  # This line prints the string <span style="color:blue">"Hello, World!"</span> to the console.
+
+                    # Variables and Data Types
+                    x = <span style="color:blue">5</span>  # Integer
+                    y = <span style="color:blue">3.14</span>  # Float
+                    name = <span style="color:blue">"Alice"</span>  # String
+                    is_student = <span style="color:blue">True</span>  # Boolean
+
+                    # Basic Arithmetic Operations
+                    sum_result = x + y  # Addition
+                    diff_result = x - y  # Subtraction
+                    prod_result = x * y  # Multiplication
+                    quot_result = x / y  # Division
+
+                    # Print the results of arithmetic operations
+                    print(<span style="color:blue">"Sum:"</span>, sum_result)
+                    print(<span style="color:blue">"Difference:"</span>, diff_result)
+                    print(<span style="color:blue">"Product:"</span>, prod_result)
+                    print(<span style="color:blue">"Quotient:"</span>, quot_result)
+
+                    # Lists
+                    fruits = [<span style="color:blue">"apple"</span>, <span style="color:blue">"banana"</span>, <span style="color:blue">"cherry"</span>]  # List of strings
+                    print(<span style="color:blue">"Fruits:"</span>, fruits)
+
+                    # Accessing list elements
+                    print(<span style="color:blue">"First fruit:"</span>, fruits[0])  # Lists are zero-indexed
+
+                    # Adding an element to the list
+                    fruits.append(<span style="color:blue">"orange"</span>)
+                    print(<span style="color:blue">"Updated fruits:"</span>, fruits)
+
+                    # Loops
+                    # For loop
+                    for fruit in fruits:
+                        print(<span style="color:blue">"Fruit:"</span>, fruit)
+
+                    # While loop
+                    count = <span style="color:blue">0</span>
+                    while count < <span style="color:blue">5</span>:
+                        print(<span style="color:blue">"Count:"</span>, count)
+                        count += <span style="color:blue">1</span>  # Increment count by 1
+
+                    # Functions
+                    def greet(name):
+                        """This function greets the person with the given name."""
+                        return f<span style="color:blue">"Hello, {name}!"</span>
+
+                    # Calling the function
+                    greeting = greet(<span style="color:blue">"Alice"</span>)
+                    print(greeting)
+
+                    # Conditional Statements
+                    age = <span style="color:blue">20</span>
+                    if age >= <span style="color:blue">18</span>:
+                        print(<span style="color:blue">"You are an adult."</span>)
+                    else:
+                        print(<span style="color:blue">"You are a minor."</span>)
+                    </code></pre>
                 </div>
                 <div class="text-wrap">
                     <h3>Explanation of Basic Concepts</h3>
@@ -85,15 +146,34 @@
                     <p>In Python, variables are used to store data that can be used and manipulated throughout your program. You can think of variables as containers that hold information. The <code>input()</code> function is used to take input from the user. Let's look at some examples to understand how variables and the <code>input()</code> function work.</p>
                     
                     <h4>Example 1: Using Variables</h4>
-                    <iframe src="https://trinket.io/embed/python3/1e4b4d7d3e" width="100%" height="200px"></iframe>
+                    <pre><code class="language-python"># Assigning values to variables
+name = "Alice"
+age = 25
+
+# Printing the values of variables
+print("Name:", name)
+print("Age:", age)</code></pre>
                     <p>In this example, we assign the string "Alice" to the variable <code>name</code> and the integer 25 to the variable <code>age</code>. We then use the <code>print()</code> function to display the values of these variables.</p>
                     
                     <h4>Example 2: Using the <code>input()</code> Function</h4>
-                    <iframe src="https://trinket.io/embed/python3/2e4b4d7d3e" width="100%" height="200px"></iframe>
+                    <pre><code class="language-python"># Taking input from the user
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+# Printing the user input
+print("Name:", name)
+print("Age:", age)</code></pre>
                     <p>In this example, we use the <code>input()</code> function to take input from the user. The <code>input()</code> function displays a prompt and waits for the user to enter a value. The entered value is then stored in the variable. We use the <code>print()</code> function to display the user input.</p>
                     
                     <h4>Example 3: Converting Input to Integer</h4>
-                    <iframe src="https://trinket.io/embed/python3/3e4b4d7d3e" width="100%" height="200px"></iframe>
+                    <pre><code class="language-python"># Taking numerical input from the user
+age = input("Enter your age: ")
+
+# Converting the input to an integer
+age = int(age)
+
+# Printing the age after conversion
+print("Your age is:", age)</code></pre>
                     <p>By default, the <code>input()</code> function returns a string. If you need to perform numerical operations on the input, you must convert it to an integer using the <code>int()</code> function. In this example, we take the user's age as input, convert it to an integer, and then print it.</p>
                 </div>
                 <div class="text-wrap">
