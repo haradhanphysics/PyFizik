@@ -337,7 +337,7 @@ li {
 }
 
 .dropdown-menu {
-    display: none;
+    display: none; /* Ensure dropdown menus are hidden by default */
     flex-direction: column;
 }
 .dropdown-submenu:hover > .dropdown-menu,
@@ -385,7 +385,7 @@ li {
 }
 
 .navbar-nav .dropdown-menu {
-    display: block; /* Ensure dropdown menus are visible */
+    display: none; /* Ensure dropdown menus are hidden by default */
 }
 
 <div id="navbar-placeholder"></div>
