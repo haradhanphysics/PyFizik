@@ -241,6 +241,12 @@
             var trinketModal = new bootstrap.Modal(document.getElementById('trinketModal'));
             trinketModal.show();
         });
+
+        // Initialize all dropdowns
+        var dropdownElements = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+        dropdownElements.map(function (dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl);
+        });
     });
 </script>
 
