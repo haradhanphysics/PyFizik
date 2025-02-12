@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar-placeholder").innerHTML = data;
+
+            // Initialize Bootstrap dropdowns after loading navbar
+            var dropdownElements = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+            dropdownElements.map(function (dropdownToggleEl) {
+                return new bootstrap.Dropdown(dropdownToggleEl);
+            });
         });
 
     fetch("footer.html")
@@ -13,12 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     mermaid.initialize({
         startOnLoad: true
-    });
-
-    // Initialize Bootstrap dropdowns
-    var dropdownElements = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
-    dropdownElements.map(function (dropdownToggleEl) {
-        return new bootstrap.Dropdown(dropdownToggleEl);
     });
 });
 
