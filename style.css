@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     padding-right: 07px;  /*Add padding to the right */
     margin-right: 07px;  /*Add margin to the right */
+    padding-top: 120px; /* Adjust this value based on the height of your navbar */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -181,6 +182,7 @@ li {
 
     body {
         font-size: 0.9rem;
+        padding-top: 150px; /* Adjust this value based on the height of your navbar */
     }
 
     h1 {
