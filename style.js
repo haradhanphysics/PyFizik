@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
     mermaid.initialize({
         startOnLoad: true
     });
+
+    // Initialize Bootstrap dropdowns
+    var dropdownElements = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+    dropdownElements.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl);
+    });
 });
 
 $(document).ready(function() {
