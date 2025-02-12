@@ -236,9 +236,11 @@
 </div>
 
 <script>
-    document.getElementById('open-trinket-btn').addEventListener('click', function() {
-        var trinketModal = new bootstrap.Modal(document.getElementById('trinketModal'));
-        trinketModal.show();
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('open-trinket-btn').addEventListener('click', function() {
+            var trinketModal = new bootstrap.Modal(document.getElementById('trinketModal'));
+            trinketModal.show();
+        });
     });
 </script>
 
