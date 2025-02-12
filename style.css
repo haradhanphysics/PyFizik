@@ -358,3 +358,27 @@ li {
     overflow-wrap: break-word;
     white-space: normal;
 }
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+    .navbar-brand {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-brand img {
+        width: 80px;
+        height: 80px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+}
+
+.navbar-nav .nav-item {
+    display: inline-block; /* Ensure buttons are inline */
+}
