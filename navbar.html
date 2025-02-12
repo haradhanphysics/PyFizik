@@ -212,10 +212,35 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary" id="open-trinket-btn">Python Editor</button>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- Add the Trinket.io editor modal -->
+<div class="modal fade" id="trinketModal" tabindex="-1" aria-labelledby="trinketModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="trinketModalLabel">Trinket.io Python Editor</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://trinket.io/embed/python" width="100%" height="500px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('open-trinket-btn').addEventListener('click', function() {
+        var trinketModal = new bootstrap.Modal(document.getElementById('trinketModal'));
+        trinketModal.show();
+    });
+</script>
 
 <style>
     body {
