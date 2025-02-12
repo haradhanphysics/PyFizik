@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Homework: Python Lists</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script> 
+    <script src="https://trinket.io/embed/python3"></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Homework: Python Lists</h1>
+                <div class="text-wrap">
+                    <h2>Introduction</h2>
+                    <p>Each problem is designed to help students practice list operations and understand their applications in physics.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Problems</h2>
+                    <div class="quiz-section">
+                        <h3>1. Calculate the average velocity from a list of velocities. (e.g., 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)</h3>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('formula1', 'description1')">Show Formula & Description</button>
+                        <pre id="formula1" class="mt-2" style="display:none;">Formula: average_velocity = sum(velocities) / len(velocities)</pre>
+                        <p id="description1" class="mt-2" style="display:none;">Average velocity is calculated by summing all velocities and dividing by the number of velocities.</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer1', 'explanation1')">Show Answer</button>
+                        <pre id="answer1" class="mt-2" style="display:none;">velocities = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]\naverage_velocity = sum(velocities) / len(velocities)\nprint("Average Velocity:", average_velocity)</pre>
+                        <p id="explanation1" class="mt-2" style="display:none;">Use the formula <code>average_velocity = sum(velocities) / len(velocities)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>2. Compute the total mass from a list of masses. (e.g., 1, 2, 3, 4, 5)</h3>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('formula2', 'description2')">Show Formula & Description</button>
+                        <pre id="formula2" class="mt-2" style="display:none;">Formula: total_mass = sum(masses)</pre>
+                        <p id="description2" class="mt-2" style="display:none;">Total mass is calculated by summing all the individual masses.</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer2', 'explanation2')">Show Answer</button>
+                        <pre id="answer2" class="mt-2" style="display:none;">masses = [1, 2, 3, 4, 5]\ntotal_mass = sum(masses)\nprint("Total Mass:", total_mass)</pre>
+                        <p id="explanation2" class="mt-2" style="display:none;">Use the function <code>sum(masses)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>3. Determine the maximum distance from a list of distances. (e.g., 100, 200, 300, 400, 500)</h3>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('formula3', 'description3')">Show Formula & Description</button>
+                        <pre id="formula3" class="mt-2" style="display:none;">Formula: max_distance = max(distances)</pre>
+                        <p id="description3" class="mt-2" style="display:none;">Maximum distance is found by using the max function on the list of distances.</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer3', 'explanation3')">Show Answer</button>
+                        <pre id="answer3" class="mt-2" style="display:none;">distances = [100, 200, 300, 400, 500]\nmax_distance = max(distances)\nprint("Maximum Distance:", max_distance)</pre>
+                        <p id="explanation3" class="mt-2" style="display:none;">Use the function <code>max(distances)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>4. Find the minimum force from a list of forces. (e.g., 10, 20, 5, 15, 25)</h3>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('formula4', 'description4')">Show Formula & Description</button>
+                        <pre id="formula4" class="mt-2" style="display:none;">Formula: min_force = min(forces)</pre>
+                        <p id="description4" class="mt-2" style="display:none;">Minimum force is found by using the min function on the list of forces.</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer4', 'explanation4')">Show Answer</button>
+                        <pre id="answer4" class="mt-2" style="display:none;">forces = [10, 20, 5, 15, 25]\nmin_force = min(forces)\nprint("Minimum Force:", min_force)</pre>
+                        <p id="explanation4" class="mt-2" style="display:none;">Use the function <code>min(forces)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>5. Calculate the average temperature from a list of temperatures. (e.g., 30, 32, 31, 29, 28, 27, 26)</h3>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('formula5', 'description5')">Show Formula & Description</button>
+                        <pre id="formula5" class="mt-2" style="display:none;">Formula: average_temperature = sum(temperatures) / len(temperatures)</pre>
+                        <p id="description5" class="mt-2" style="display:none;">Average temperature is calculated by summing all temperatures and dividing by the number of temperatures.</p>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer5', 'explanation5')">Show Answer</button>
+                        <pre id="answer5" class="mt-2" style="display:none;">temperatures = [30, 32, 31, 29, 28, 27, 26]\naverage_temperature = sum(temperatures) / len(temperatures)\nprint("Average Temperature:", average_temperature)</pre>
+                        <p id="explanation5" class="mt-2" style="display:none;">Use the formula <code>average_temperature = sum(temperatures) / len(temperatures)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>6. Sort a list of heights in ascending order. (e.g., 150, 160, 170, 180, 190, 200, 210, 220, 230, 240)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer6', 'explanation6')">Show Answer</button>
+                        <pre id="answer6" class="mt-2" style="display:none;">heights = [150, 160, 170, 180, 190, 200, 210, 220, 230, 240]\nsorted_heights = sorted(heights)\nprint("Sorted Heights:", sorted_heights)</pre>
+                        <p id="explanation6" class="mt-2" style="display:none;">Use the function <code>sorted(heights)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>7. Compute the total kinetic energy from a list of kinetic energies. (e.g., 100, 200, 300, 400, 500)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer7', 'explanation7')">Show Answer</button>
+                        <pre id="answer7" class="mt-2" style="display:none;">kinetic_energies = [100, 200, 300, 400, 500]\ntotal_kinetic_energy = sum(kinetic_energies)\nprint("Total Kinetic Energy:", total_kinetic_energy)</pre>
+                        <p id="explanation7" class="mt-2" style="display:none;">Use the function <code>sum(kinetic_energies)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>8. Calculate the total potential energy from a list of potential energies. (e.g., 50, 100, 150, 200, 250)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer8', 'explanation8')">Show Answer</button>
+                        <pre id="answer8" class="mt-2" style="display:none;">potential_energies = [50, 100, 150, 200, 250]\ntotal_potential_energy = sum(potential_energies)\nprint("Total Potential Energy:", total_potential_energy)</pre>
+                        <p id="explanation8" class="mt-2" style="display:none;">Use the function <code>sum(potential_energies)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>9. Determine the highest power output from a list of power outputs. (e.g., 1000, 2000, 1500, 2500, 3000)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer9', 'explanation9')">Show Answer</button>
+                        <pre id="answer9" class="mt-2" style="display:none;">power_outputs = [1000, 2000, 1500, 2500, 3000]\nhighest_power_output = max(power_outputs)\nprint("Highest Power Output:", highest_power_output)</pre>
+                        <p id="explanation9" class="mt-2" style="display:none;">Use the function <code>max(power_outputs)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>10. Compute the total work done from a list of work values. (e.g., 500, 1000, 1500, 2000, 2500)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer10', 'explanation10')">Show Answer</button>
+                        <pre id="answer10" class="mt-2" style="display:none;">work_done = [500, 1000, 1500, 2000, 2500]\ntotal_work_done = sum(work_done)\nprint("Total Work Done:", total_work_done)</pre>
+                        <p id="explanation10" class="mt-2" style="display:none;">Use the function <code>sum(work_done)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>11. Find the highest acceleration from a list of accelerations. (e.g., 2, 4, 6, 8, 10)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer11', 'explanation11')">Show Answer</button>
+                        <pre id="answer11" class="mt-2" style="display:none;">accelerations = [2, 4, 6, 8, 10]\nhighest_acceleration = max(accelerations)\nprint("Highest Acceleration:", highest_acceleration)</pre>
+                        <p id="explanation11" class="mt-2" style="display:none;">Use the function <code>max(accelerations)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>12. Calculate the total momentum from a list of momenta. (e.g., 10, 20, 30, 40, 50)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer12', 'explanation12')">Show Answer</button>
+                        <pre id="answer12" class="mt-2" style="display:none;">momenta = [10, 20, 30, 40, 50]\ntotal_momentum = sum(momenta)\nprint("Total Momentum:", total_momentum)</pre>
+                        <p id="explanation12" class="mt-2" style="display:none;">Use the function <code>sum(momenta)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>13. Compute the total charge from a list of charges. (e.g., 1, -1, 2, -2, 3)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer13', 'explanation13')">Show Answer</button>
+                        <pre id="answer13" class="mt-2" style="display:none;">charges = [1, -1, 2, -2, 3]\ntotal_charge = sum(charges)\nprint("Total Charge:", total_charge)</pre>
+                        <p id="explanation13" class="mt-2" style="display:none;">Use the function <code>sum(charges)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>14. Determine the shortest wavelength from a list of wavelengths. (e.g., 400, 500, 600, 700, 800)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer14', 'explanation14')">Show Answer</button>
+                        <pre id="answer14" class="mt-2" style="display:none;">wavelengths = [400, 500, 600, 700, 800]\nshortest_wavelength = min(wavelengths)\nprint("Shortest Wavelength:", shortest_wavelength)</pre>
+                        <p id="explanation14" class="mt-2" style="display:none;">Use the function <code>min(wavelengths)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>15. Find the highest frequency from a list of frequencies. (e.g., 50, 60, 70, 80, 90)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer15', 'explanation15')">Show Answer</button>
+                        <pre id="answer15" class="mt-2" style="display:none;">frequencies = [50, 60, 70, 80, 90]\nhighest_frequency = max(frequencies)\nprint("Highest Frequency:", highest_frequency)</pre>
+                        <p id="explanation15" class="mt-2" style="display:none;">Use the function <code>max(frequencies)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>16. Calculate the average speed of a car over a trip from a list of speeds. (e.g., 60, 70, 80, 90, 100)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer16', 'explanation16')">Show Answer</button>
+                        <pre id="answer16" class="mt-2" style="display:none;">speeds = [60, 70, 80, 90, 100]\naverage_speed = sum(speeds) / len(speeds)\nprint("Average Speed:", average_speed)</pre>
+                        <p id="explanation16" class="mt-2" style="display:none;">Use the formula <code>average_speed = sum(speeds) / len(speeds)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>17. Find the median value of a list of resistances. (e.g., 10, 20, 30, 40, 50, 60, 70)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer17', 'explanation17')">Show Answer</button>
+                        <pre id="answer17" class="mt-2" style="display:none;">resistances = [10, 20, 30, 40, 50, 60, 70]\nsorted_resistances = sorted(resistances)\nmid_index = len(sorted_resistances) // 2\nif len(sorted_resistances) % 2 == 0:\n    median_resistance = (sorted_resistances[mid_index - 1] + sorted_resistances[mid_index]) / 2\nelse:\n    median_resistance = sorted_resistances[mid_index]\nprint("Median Resistance:", median_resistance)</pre>
+                        <p id="explanation17" class="mt-2" style="display:none;">Use the function <code>statistics.median(resistances)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>18. Calculate the range of a list of voltages. (e.g., 110, 120, 130, 140, 150)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer18', 'explanation18')">Show Answer</button>
+                        <pre id="answer18" class="mt-2" style="display:none;">voltages = [110, 120, 130, 140, 150]\nrange_voltage = max(voltages) - min(voltages)\nprint("Range of Voltages:", range_voltage)</pre>
+                        <p id="explanation18" class="mt-2" style="display:none;">Use the formula <code>range_voltage = max(voltages) - min(voltages)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>19. Compute the total gravitational force from a list of forces. (e.g., 9.8, 19.6, 29.4, 39.2, 49.0)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer19', 'explanation19')">Show Answer</button>
+                        <pre id="answer19" class="mt-2" style="display:none;">forces = [9.8, 19.6, 29.4, 39.2, 49.0]\ntotal_force = sum(forces)\nprint("Total Gravitational Force:", total_force)</pre>
+                        <p id="explanation19" class="mt-2" style="display:none;">Use the function <code>sum(forces)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>20. Determine the highest torque from a list of torques. (e.g., 10, 20, 30, 40, 50)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer20', 'explanation20')">Show Answer</button>
+                        <pre id="answer20" class="mt-2" style="display:none;">torques = [10, 20, 30, 40, 50]\nhighest_torque = max(torques)\nprint("Highest Torque:", highest_torque)</pre>
+                        <p id="explanation20" class="mt-2" style="display:none;">Use the function <code>max(torques)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>21. Calculate the average pressure from a list of pressures. (e.g., 100, 200, 300, 400, 500)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer21', 'explanation21')">Show Answer</button>
+                        <pre id="answer21" class="mt-2" style="display:none;">pressures = [100, 200, 300, 400, 500]\naverage_pressure = sum(pressures) / len(pressures)\nprint("Average Pressure:", average_pressure)</pre>
+                        <p id="explanation21" class="mt-2" style="display:none;">Use the formula <code>average_pressure = sum(pressures) / len(pressures)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>22. Find the highest voltage from a list of voltages. (e.g., 110, 120, 130, 140, 150)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer22', 'explanation22')">Show Answer</button>
+                        <pre id="answer22" class="mt-2" style="display:none;">voltages = [110, 120, 130, 140, 150]\nhighest_voltage = max(voltages)\nprint("Highest Voltage:", highest_voltage)</pre>
+                        <p id="explanation22" class="mt-2" style="display:none;">Use the function <code>max(voltages)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>23. Compute the total electric field from a list of electric fields. (e.g., 5, 10, 15, 20, 25)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer23', 'explanation23')">Show Answer</button>
+                        <pre id="answer23" class="mt-2" style="display:none;">electric_fields = [5, 10, 15, 20, 25]\ntotal_electric_field = sum(electric_fields)\nprint("Total Electric Field:", total_electric_field)</pre>
+                        <p id="explanation23" class="mt-2" style="display:none;">Use the function <code>sum(electric_fields)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>24. Determine the highest magnetic field from a list of magnetic fields. (e.g., 0.1, 0.2, 0.3, 0.4, 0.5)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer24', 'explanation24')">Show Answer</button>
+                        <pre id="answer24" class="mt-2" style="display:none;">magnetic_fields = [0.1, 0.2, 0.3, 0.4, 0.5]\nhighest_magnetic_field = max(magnetic_fields)\nprint("Highest Magnetic Field:", highest_magnetic_field)</pre>
+                        <p id="explanation24" class="mt-2" style="display:none;">Use the function <code>max(magnetic_fields)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>25. Calculate the average current from a list of currents. (e.g., 1, 2, 3, 4, 5)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer25', 'explanation25')">Show Answer</button>
+                        <pre id="answer25" class="mt-2" style="display:none;">currents = [1, 2, 3, 4, 5]\naverage_current = sum(currents) / len(currents)\nprint("Average Current:", average_current)</pre>
+                        <p id="explanation25" class="mt-2" style="display:none;">Use the formula <code>average_current = sum(currents) / len(currents)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>26. Find the highest capacitance from a list of capacitances. (e.g., 1, 2, 3, 4, 5)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer26', 'explanation26')">Show Answer</button>
+                        <pre id="answer26" class="mt-2" style="display:none;">capacitances = [1, 2, 3, 4, 5]\nhighest_capacitance = max(capacitances)\nprint("Highest Capacitance:", highest_capacitance)</pre>
+                        <p id="explanation26" class="mt-2" style="display:none;">Use the function <code>max(capacitances)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>27. Compute the total inductance from a list of inductances. (e.g., 1, 2, 3, 4, 5)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer27', 'explanation27')">Show Answer</button>
+                        <pre id="answer27" class="mt-2" style="display:none;">inductances = [1, 2, 3, 4, 5]\ntotal_inductance = sum(inductances)\nprint("Total Inductance:", total_inductance)</pre>
+                        <p id="explanation27" class="mt-2" style="display:none;">Use the function <code>sum(inductances)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>28. Determine the highest resistance from a list of resistances. (e.g., 10, 20, 30, 40, 50)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer28', 'explanation28')">Show Answer</button>
+                        <pre id="answer28" class="mt-2" style="display:none;">resistances = [10, 20, 30, 40, 50]\nhighest_resistance = max(resistances)\nprint("Highest Resistance:", highest_resistance)</pre>
+                        <p id="explanation28" class="mt-2" style="display:none;">Use the function <code>max(resistances)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>29. Calculate the average power from a list of power values. (e.g., 100, 200, 300, 400, 500)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer29', 'explanation29')">Show Answer</button>
+                        <pre id="answer29" class="mt-2" style="display:none;">power_values = [100, 200, 300, 400, 500]\naverage_power = sum(power_values) / len(power_values)\nprint("Average Power:", average_power)</pre>
+                        <p id="explanation29" class="mt-2" style="display:none;">Use the formula <code>average_power = sum(power_values) / len(power_values)</code>.</p>
+                    </div>
+                    <div class="quiz-section">
+                        <h3>30. Find the highest temperature from a list of temperatures. (e.g., 30, 32, 31, 29, 28, 27, 26)</h3>
+                        <iframe src="https://trinket.io/embed/python3" width="100%" height="200px"></iframe>
+                        <button class="btn btn-secondary mt-2" onclick="toggleExplanation('answer30', 'explanation30')">Show Answer</button>
+                        <pre id="answer30" class="mt-2" style="display:none;">temperatures = [30, 32, 31, 29, 28, 27, 26]\nhighest_temperature = max(temperatures)\nprint("Highest Temperature:", highest_temperature)</pre>
+                        <p id="explanation30" class="mt-2" style="display:none;">Use the function <code>max(temperatures)</code>.</p>
+                    </div>
+                </div>
+                <div class="text-wrap">
+                    <h2>Submission</h2>
+                    <p>Save your Python programs in a file named <code>list_homework.py</code>. Submit the file to your instructor by the due date.</p>
+                </div>
+                <div class="text-wrap">
+                    <h2>Additional Resources</h2>
+                    <ul>
+                        <li><a href="https://docs.python.org/3/library/functions.html">Python Built-in Functions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        function runCode(codeId, outputId, expectedOutput, hint) {
+            var code = document.getElementById(codeId).value;
+            var outputElem = document.getElementById(outputId);
+            var trinketUrl = "https://trinket.io/embed/python3#code=" + encodeURIComponent(code);
+            outputElem.src = trinketUrl;
+        }
+
+        function showAnswer(answerId) {
+            var answerElem = document.getElementById(answerId);
+            if (answerElem.style.display === "none") {
+                answerElem.style.display = "block";
+            } else {
+                answerElem.style.display = "none";
+            }
+        }
+
+        function toggleExplanation(answerId, explanationId) {
+            showAnswer(answerId);
+            var explanationElem = document.getElementById(explanationId);
+            if (explanationElem.style.display === "none") {
+                explanationElem.style.display = "block";
+            } else {
+                explanationElem.style.display = "none";
+            }
+        }
+    </script>
+    <script src="style.js"></script>
+</body>
+</html>
