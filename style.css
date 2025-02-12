@@ -381,4 +381,9 @@ li {
 
 .navbar-nav .nav-item {
     display: inline-block; /* Ensure buttons are inline */
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+.navbar-nav .dropdown-menu {
+    display: block; /* Ensure dropdown menus are visible */
 }
