@@ -214,6 +214,26 @@
         dropdownElements.map(function (dropdownToggleEl) {
             return new bootstrap.Dropdown(dropdownToggleEl);
         });
+
+        // Handle submenu dropdowns
+        var subMenuElements = document.querySelectorAll('.dropdown-submenu .dropdown-toggle');
+        subMenuElements.forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var nextEl = element.nextElementSibling;
+                if (nextEl && nextEl.classList.contains('dropdown-menu')) {
+                    nextEl.classList.toggle('show');
+                }
+            });
+        });
+
+        // Close all dropdowns when clicking outside
+        document.addEventListener('click', function (e) {
+            var openDropdowns = document.querySelectorAll('.dropdown-menu.show');
+            openDropdowns.forEach(function (dropdown) {
+                dropdown.classList.remove('show');
+            });
+        });
     });
 </script>
 
@@ -257,5 +277,17 @@
         color: #fff;
         background-color: #17a2b8;
         border-color: #17a2b8;
+    }
+    /* Custom styles for dropdowns */
+    .dropdown-submenu {
+        position: relative;
+    }
+    .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+    }
+    .dropdown-menu.show {
+        display: block;
     }
 </style>
