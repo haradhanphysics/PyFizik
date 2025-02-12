@@ -101,11 +101,16 @@ pre {
 }
 
 .navbar-nav .dropdown-menu {
-    background-color: #306998;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none; /* Ensure dropdown menus are hidden by default */
     flex-direction: column;
+    position: absolute;
+    will-change: transform;
+    top: 100%;
+    left: 0;
+    margin-top: 0.125rem;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 }
 
 .navbar-nav .dropdown-item {
@@ -340,14 +345,29 @@ li {
 .dropdown-menu {
     display: none; /* Ensure dropdown menus are hidden by default */
     flex-direction: column;
+    position: absolute;
+    will-change: transform;
+    top: 100%;
+    left: 0;
+    margin-top: 0.125rem;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
 }
+
+.dropdown-menu.show {
+    display: block;
+}
+
 .dropdown-submenu:hover > .dropdown-menu,
 .dropdown-menu.show {
-    display: flex;
+    display: block;
 }
+
 .dropdown-submenu {
     position: relative;
 }
+
 .dropdown-submenu .dropdown-menu {
     top: 0;
     left: 100%;
