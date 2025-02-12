@@ -101,17 +101,9 @@ pre {
 }
 
 .navbar-nav .dropdown-menu {
-    display: none; /* Ensure dropdown menus are hidden by default */
-    flex-direction: column;
-    position: absolute;
-    will-change: transform;
-    top: 100%;
-    left: 0;
-    margin-top: 0.125rem;
-    border: 0;
-    border-radius: 0.25rem;
     background-color: #306998;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-nav .dropdown-item {
