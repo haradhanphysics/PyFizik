@@ -387,3 +387,249 @@ li {
 .navbar-nav .dropdown-menu {
     display: block; /* Ensure dropdown menus are visible */
 }
+
+<div id="navbar-placeholder"></div>
+
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" class="rounded-circle" style="width: 80px; height: 80px;">
+            </a>
+            <a class="navbar-brand" href="#">PyFizik</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Basic of Python
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="instroduction.html">Introduction to Python</a>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="setup.html">Set-up for Python</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="setup.html">Set-up</a></li>
+                                <li><a class="dropdown-item" href="helloworld.html">Hello World</a></li>
+                                <li><a class="dropdown-item" href="homework_helloworld.html">Homework Problems</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="variable.html">Variables</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="variable.html">Concept of variables</a></li>
+                                <li><a class="dropdown-item" href="homework_variable.html">Homework Problems of variables</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="list.html">Lists</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="list.html">Concept of Lists</a></li>
+                                <li><a class="dropdown-item" href="homework_list.html">Homework Problems of Lists</a></li>    
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Forloop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Concept of Forloop</a></li>
+                                <li><a class="dropdown-item" href="#">Homework Problems of Forloop</a></li>  
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Containers</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Concept of Containers</a></li>
+                                <li><a class="dropdown-item" href="#">Homework Problems of Containers</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Functions</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Concept of Functions</a></li>
+                                <li><a class="dropdown-item" href="#">Homework Problems of Functions</a></li>
+                        
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Classes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Concept of Classes</a></li>
+                                <li><a class="dropdown-item" href="#">Homework Problems of Classes</a></li>
+                          
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Modules</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Concept of Modules</a></li>
+                                <li><a class="dropdown-item" href="#">Homework Problems of Modules</a></li>
+                                                </ul>   
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pyphysics.html" id="pyPhysicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PyPhysics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pyPhysicsDropdown">
+                        <li><a class="dropdown-item" href="classical_physics.html">Python for Classical Physics</a></li>
+                        <li><a class="dropdown-item" href="quantum_physics.html">Python for Quantum Physics</a></li>
+                        <li><a class="dropdown-item" href="statistical_physics.html">Python for Statistical Physics</a></li>
+                        <li><a class="dropdown-item" href="solid_state_physics.html">Python for Solid State Physics</a></li>
+                        <li><a class="dropdown-item" href="quantum_field_theory.html">Python for Quantum Field Theory</a></li>
+                        <li><a class="dropdown-item" href="heavy_ion_physics.html">Python for Heavy-ion Physics</a></li>
+                        <li><a class="dropdown-item" href="neutrino_physics.html">Python for Neutrino Physics</a></li>
+                        <li><a class="dropdown-item" href="astrophysics.html">Python for AstroPhysics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pystat.html" id="pyDataAnalysisDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PyStat
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pyDataAnalysisDropdown">
+                        <li><a class="dropdown-item" href="introduction.html">Introduction</a></li>
+                        <li><a class="dropdown-item" href="getting_processing_data.html">Getting & Processing Data</a></li>
+                        <li><a class="dropdown-item" href="data_visualization.html">Data Visualization</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pyml.html" id="pyMLDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PyML
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pyMLDropdown">
+                        <li><a class="dropdown-item" href="supervised_unsupervised_learning.html">Supervised & Unsupervised Learning</a></li>
+                        <li><a class="dropdown-item" href="regression.html">Regression</a></li>
+                        <li><a class="dropdown-item" href="classification.html">Classification</a></li>
+                        <li><a class="dropdown-item" href="clustering.html">Clustering</a></li>
+                        <li><a class="dropdown-item" href="reinforcement_learning.html">Reinforcement Learning</a></li>
+                        <li><a class="dropdown-item" href="artificial_neural_networks.html">Artificial Neural Networks</a></li>
+                        <li><a class="dropdown-item" href="natural_language_processing.html">Natural Language Processing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pyroot.html" id="cernPyROOTDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PyROOT
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="cernPyROOTDropdown">
+                        <li><a class="dropdown-item" href="basics_statistical_physics.html">Basics of Statistical Physics</a></li>
+                        <li><a class="dropdown-item" href="cern_root.html">CERN ROOT</a></li>
+                        <li><a class="dropdown-item" href="pyroot_interface.html">Python interface: PyROOT</a></li>
+                        <li><a class="dropdown-item" href="getting_started.html">Getting started</a></li>
+                        <li><a class="dropdown-item" href="interactive_graphics.html">Interactive graphics</a></li>
+                        <li><a class="dropdown-item" href="graphics_scripts.html">Graphics and scripts</a></li>
+                        <li><a class="dropdown-item" href="user_interface.html">User interface</a></li>
+                        <li><a class="dropdown-item" href="low_level_manipulation.html">Low-level manipulation of objects</a></li>
+                        <li><a class="dropdown-item" href="pythonizing_cpp.html">Pythonizing C++ user classes</a></li>
+                        <li><a class="dropdown-item" href="jupyroot.html">JupyROOT: (Py)ROOT for Jupyter notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="author.html" id="authorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Author
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="authorDropdown">
+                        <li><a class="dropdown-item" href="bio.html">Bio</a></li>
+                        <li><a class="dropdown-item" href="publications.html">Publications</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="online_classes.html" id="onlineClassesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Online Classes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="onlineClassesDropdown">
+                        <li><a class="dropdown-item" href="course1.html">Course 1</a></li>
+                        <li><a class="dropdown-item" href="course2.html">Course 2</a></li>
+                        <li><a class="dropdown-item" href="course3.html">Course 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="practice_python.html" id="practicePythonDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Practice Python
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="practicePythonDropdown">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="general_quiz.html">General Quiz</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hello_world_quiz.html">Hello World</a></li>
+                                <li><a class="dropdown-item" href="variable_datatypes_quiz.html">Variable & Data-types</a></li>
+                                <li><a class="dropdown-item" href="lists_quiz.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="for_loops_quiz.html">For Loops</a></li>
+                                <li><a class="dropdown-item" href="containers_quiz.html">Containers</a></li>
+                                <li><a class="dropdown-item" href="conditions_quiz.html">Conditions</a></li>
+                                <li><a class="dropdown-item" href="functions_quiz.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="classes_quiz.html">Classes</a></li>
+                                <li><a class="dropdown-item" href="modules_quiz.html">Modules</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="physics_quiz.html">Physics Quiz</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hello_world_physics_quiz.html">Hello World</a></li>
+                                <li><a class="dropdown-item" href="variable_datatypes_physics_quiz.html">Variable & Data-types</a></li>
+                                <li><a class="dropdown-item" href="lists_physics_quiz.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="for_loops_physics_quiz.html">For Loops</a></li>
+                                <li><a class="dropdown-item" href="containers_physics_quiz.html">Containers</a></li>
+                                <li><a class="dropdown-item" href="conditions_physics_quiz.html">Conditions</a></li>
+                                <li><a class="dropdown-item" href="functions_physics_quiz.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="classes_physics_quiz.html">Classes</a></li>
+                                <li><a class="dropdown-item" href="modules_physics_quiz.html">Modules</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 180px;">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    body {
+        padding-top: 120px; /* Adjust this value based on the height of your navbar */
+    }
+    @media (max-width: 768px) {
+        .navbar-brand img {
+            width: 60px;
+            height: 60px;
+        }
+        .navbar-brand {
+            font-size: 14px;
+        }
+        body {
+            padding-top: 100px; /* Adjust this value based on the height of your navbar */
+        }
+    }
+    @media (min-width: 769px) {
+        .navbar-brand img {
+            width: 80px;
+            height: 80px;
+        }
+        .navbar-brand {
+            font-size: 16px;
+        }
+    }
+</style>
